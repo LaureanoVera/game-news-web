@@ -251,6 +251,10 @@ ol {
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
+  .showcase {
+    border-radius: 0;
+  }
+
   .menu-responsive {
     background-color: #0b0b0b;
     color: var(--gold);
@@ -310,6 +314,12 @@ ol {
 
   .news-cars.med div:last-child img {
     height: 260px;
+  }
+
+  .banner-one,
+  .banner-two,
+  .banner-three {
+    border-radius: 0;
   }
 
   .banner-one__content,
