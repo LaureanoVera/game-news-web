@@ -255,6 +255,10 @@ ol {
 }
 
 .social p {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  filter: drop-shadow(2px 2px 1px gray);
   text-align: center;
   font-size: 2em;
   margin-bottom: .4em;
@@ -272,6 +276,7 @@ ol {
 
 .social__links i {
   font-size: 3em;
+  color: var(--gold);
 }
 
 /* FOOTER LINKS */
@@ -285,13 +290,14 @@ ol {
 .footer-links__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
   align-items: flex-start;
   justify-content: center;
 }
 
 .footer-links__container ul {
   text-align: center;
+  display: inherit;
+  gap: .2em;
 }
 
 /* FOOTER */
@@ -300,8 +306,8 @@ ol {
   background-color: var(--black);
   color: var(--gold);
   text-align: center;
-  padding: 1.2em 0;
-  font-size: 12px;
+  padding: 1.1em 0;
+  font-size: 14px;
 }
 
 /* RESPONSIVE */
@@ -316,7 +322,7 @@ ol {
   }
 
   .menu-responsive {
-    background-color: #0b0b0b;
+    background-color: var(--black);
     color: var(--gold);
     /* opacity: .8; */
     padding: 0 .35em .12em;
@@ -331,13 +337,15 @@ ol {
   }
 
   .nav-main__menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #2f3640;
+    background-color: var(--black);
     height: 100vh;
-    padding: 2em;
+    padding: 2.5em;
     opacity: .85;
     z-index: 5;
     transition: left .3s ease-in-out;
@@ -354,6 +362,15 @@ ol {
   .nav-main__menu li {
     font-size: 14px;
     padding: 1.4em;
+  }
+
+  .nav-main__menu a {
+    padding: .6em 1em;
+  }
+
+  .nav-main__menu a:hover {
+    background: linear-gradient(90deg, var(--gold) 0%, transparent 100%);
+    border-radius: 4px 0 0 4px;
   }
 
   .news-cars {

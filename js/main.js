@@ -1,18 +1,3 @@
-// ====== Scroll Reveal ======
-document.querySelector('.menu-responsive').addEventListener('click', () => {
-  document.querySelector('.nav-main__menu').classList.toggle('show');
-});
-ScrollReveal().reveal('.scroll');
-ScrollReveal().reveal('.showcase');
-ScrollReveal().reveal('.news-cars', { delay: 300 });
-ScrollReveal().reveal('.news-cards__image', { delay: 300 });
-ScrollReveal().reveal('.news-cards__title', { delay: 300 });
-ScrollReveal().reveal('.banner-one', { delay: 300 });
-ScrollReveal().reveal('.banner-two', { delay: 300 });
-ScrollReveal().reveal('.banner-three', { delay: 300 });
-
-
-
 // ====== Cambio de Fondo Showcase ======
 const thisImage = document.querySelector('.showcase'); // background para header
 const text = document.querySelector('.showcase__text'); // texto del header
@@ -76,17 +61,3 @@ const rightChange = () => {
 const buttonRight = document.querySelector('.showcase__right'); // boton derecho
 buttonRight.addEventListener('click', rightChange); // llama la funcion leftChange() al click
 buttonRight.addEventListener('click', textChange); // llama la funcion textChange() al click
-
-// ====== Barra de Scroll ======
-window.addEventListener('scroll', () => {
-  const top = document.documentElement.scrollTop;
-
-  const heightObj = {
-    scroll: document.documentElement.scrollHeight,
-    client: document.documentElement.clientHeight
-  }
-  const height = heightObj.scroll - heightObj.client;
-
-  const totalScrolled = (top / height) * 100;
-  document.querySelector('.scroll-bar').style.width = `${totalScrolled}%`;
-});
