@@ -195,14 +195,14 @@ ol {
 
 /* SOCIAL */
 .social {
-  margin: 3em;
+  margin: 2em;
   color: #fff;
 }
 
 .social p {
   text-align: center;
   font-size: 2em;
-  margin-bottom: 1.24em;
+  margin-bottom: .4em;
 }
 
 .social__links {
@@ -224,13 +224,13 @@ ol {
   box-shadow: 0 -2px 3px var(--gold);
   background: var(--black);
   font-size: 12px;
-  padding: 3em 0;
+  padding: 2em 0;
 }
 
 .footer-links__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
   align-items: flex-start;
   justify-content: center;
 }
@@ -326,10 +326,6 @@ ol {
   .banner-two__content,
   .banner-three__content {
     width: 80%;
-  }
-
-  .footer-links__container {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
