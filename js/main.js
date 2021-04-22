@@ -8,7 +8,6 @@ const textChange = () => {
   // cambia la descripcion dependiendo cual es la imagen del juego
   switch (countImage) {
     case 1:
-      console.log('es uno');
       text.textContent=`Vive el survival horror como nunca antes en la 8.ª entrega principal de la aclamada serie Resident Evil: Resident Evil Village. El terror más realista e inescapable, con gráficos hiperdetallados, intensa acción en 1.ª persona y una trama magistral.`;
       break;
       
@@ -54,7 +53,6 @@ const rightChange = () => {
   if (countImage < 5) {
     countImage += 1;
   }
-  console.log(countImage);
   return countImage, thisImage.style.backgroundImage=`url('../images/showcase-0${countImage}.jpg')`;
 }
 
