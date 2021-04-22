@@ -168,7 +168,7 @@ ol {
   height: 380px;
   background: url(../images/banner-one-kid.jpg) no-repeat center center/cover;
   border-radius: .4em;
-  margin-top: 1.8em;
+  margin-top: 1.4em;
   text-shadow: 0 0 65px #fff;
 }
 
@@ -313,7 +313,8 @@ ol {
   }
 
   .banner-one__content,
-  .banner-two__content {
+  .banner-two__content,
+  .banner-three__content {
     width: 80%;
   }
 
