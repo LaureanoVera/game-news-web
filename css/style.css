@@ -208,8 +208,8 @@ ol {
 
 /* FOOTER LINKS */
 .footer-links {
-  background: #2f3640;
-  color: #616161;
+  box-shadow: 0 -2px 3px var(--gold);
+  background: var(--black);
   font-size: 12px;
   padding: 3em 0;
 }
@@ -229,8 +229,8 @@ ol {
 /* FOOTER */
 .footer {
   text-transform: uppercase;
-  background-color: #2f3640;
-  color: #616161;
+  background-color: var(--black);
+  color: var(--gold);
   text-align: center;
   padding: 1.2em 0;
   font-size: 12px;
@@ -280,6 +280,7 @@ ol {
   }
 
   .news-cars {
+    margin: 1em 2em;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -313,11 +314,19 @@ ol {
   .news-cars {
     grid-template-columns: 1fr;
     width: 80%;
-    margin: 0 auto;
+    margin: 1em auto;
   }
 
   .news-cars.med {
     grid-template-columns: 1fr;
+  }
+
+  .news-cars.med div:last-child {
+    margin: 1em auto;
+  }
+
+  .news-cars.med div:last-child img {
+    height: auto;
   }
 
   .banner-one__content,
