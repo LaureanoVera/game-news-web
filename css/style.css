@@ -10,6 +10,7 @@
 }
 
 body {
+  scroll-behavior: smooth;
   background-color: #000;
   color: #eee;
   background-color: #0b0b0b;
@@ -129,10 +130,17 @@ ol {
 .news-cards__image {
   width: 100%;
   height: auto;
-  border-radius: .4em;
+  filter: opacity(.85) grayscale(.4);
+  border-radius: .3em 1em;
+  transition: filter .3s;
+}
+
+.news-cards__image:hover {
+  filter: opacity(1) grayscale(0);
 }
 
 .news-cards__title {
+  color: var(--gold);
   font-size: 1.23em;
   margin: .5em 0;
 }
@@ -157,7 +165,7 @@ ol {
   background: url(../images/banner-one-kid.jpg) no-repeat center center/cover;
   border-radius: .4em;
   margin-top: 1.8em;
-  filter: grayscale(.5);
+  text-shadow: 0 0 65px #fff;
 }
 
 .banner-two {
@@ -177,7 +185,8 @@ ol {
 .banner-one__content-title, 
 .banner-two__content-title,
 .banner-three__content-title {
-  margin: .5em 0 0;
+  padding: .3em .7em;
+  color: var(--gold);
 }
 
 /* SOCIAL */
