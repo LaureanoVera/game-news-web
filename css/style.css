@@ -127,6 +127,10 @@ ol {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.news-cars.med img {
+  border-radius: 1.8em .3em;
+}
+
 .news-cards__image {
   width: 100%;
   height: auto;
