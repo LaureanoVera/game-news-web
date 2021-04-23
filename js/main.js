@@ -2,7 +2,7 @@
 const thisImage = document.querySelector('.showcase'); // background para header
 const text = document.querySelector('.showcase__text'); // texto del header
 let countImage = 1; // para controlar la imagen
-thisImage.style.backgroundImage=`url('../images/showcase-0${countImage}.jpg')`; // imagen con la que inicia
+thisImage.style.backgroundImage=`url("./images/showcase-01.jpg")`; // imagen con la que inicia
 
 const textChange = () => {
   // cambia la descripcion dependiendo cual es la imagen del juego
@@ -39,7 +39,7 @@ const leftChange = () => {
   if (countImage > 1) {
     countImage -= 1;
   }
-  return countImage, thisImage.style.backgroundImage=`url('../images/showcase-0${countImage}.jpg')`;
+  return countImage, thisImage.style.backgroundImage=`url('./images/showcase-0${countImage}.jpg')`;
 }
 
 const buttonLeft = document.querySelector('.showcase__left'); // boton izquierdo
@@ -53,7 +53,7 @@ const rightChange = () => {
   if (countImage < 5) {
     countImage += 1;
   }
-  return countImage, thisImage.style.backgroundImage=`url('../images/showcase-0${countImage}.jpg')`;
+  return countImage, thisImage.style.backgroundImage=`url('./images/showcase-0${countImage}.jpg')`;
 }
 
 const buttonRight = document.querySelector('.showcase__right'); // boton derecho

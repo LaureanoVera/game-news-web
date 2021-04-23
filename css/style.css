@@ -39,12 +39,13 @@ ol {
   background-color: var(--gold);
 }
 
-/* NAVIGATION BAR */
 .container {
   max-width: 1024px;
   /* max-width: 90%; */
   margin: 0 auto;
 }
+
+/* NAVIGATION BAR */
 
 .nav-main {
   font-size: 1em;
@@ -413,6 +414,11 @@ ol {
     padding: 2em 1em 9em;
   }
 
+  .showcase h2,
+  .showcase p {
+    padding-bottom: .1em;
+  }
+
   .showcase__arrows {
     top: 70vh;
   }
@@ -447,6 +453,23 @@ ol {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  body {
+    font-size: 1.3em;
+  }
+
+  .container {
+    max-width: 1440px;
+  }
+
+  .footer-links {
+    margin-bottom: -6px;
+  }
+
+  .footer {
+    padding: 1.4em 0; 
+  }
+}
 
 
 
