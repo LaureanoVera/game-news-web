@@ -1,8 +1,26 @@
-// ====== Cambio de Fondo Showcase ======
+// CAMBIO DE IMAGEN
 const thisImage = document.querySelector('.showcase'); // background para header
-const text = document.querySelector('.showcase__text'); // texto del header
 let countImage = 1; // para controlar la imagen
 thisImage.style.backgroundImage=`url("./images/showcase-01.jpg")`; // imagen con la que inicia
+
+const changeImageLeft = () => {
+  // resta 1 a countImage. cambio a izquierda
+  if (countImage > 1) {
+    countImage -= 1;
+  }
+  return countImage, thisImage.style.backgroundImage=`url('./images/showcase-0${countImage}.jpg')`;
+}
+
+const changeImageRight = () => {
+  // resta 1 a countImage. cambio a izquierda
+  if (countImage < 5) {
+    countImage += 1;
+  }
+  return countImage, thisImage.style.backgroundImage=`url('./images/showcase-0${countImage}.jpg')`;  
+}
+
+// CAMBIO DE TEXTO
+const text = document.querySelector('.showcase__text'); // texto del header
 
 const textChange = () => {
   // cambia la descripcion dependiendo cual es la imagen del juego
@@ -31,31 +49,3 @@ const textChange = () => {
       break;
   }
 }
-
-// LEFT CHANGES
-const leftChange = () => {
-  // cambia el fondo dependiendo el numero de countImage
-  // resta 1 a countImage
-  if (countImage > 1) {
-    countImage -= 1;
-  }
-  return countImage, thisImage.style.backgroundImage=`url('./images/showcase-0${countImage}.jpg')`;
-}
-
-const buttonLeft = document.querySelector('.showcase__left'); // boton izquierdo
-buttonLeft.addEventListener('click', leftChange); // llama la funcion leftChange() al click
-buttonLeft.addEventListener('click', textChange); // llama la funcion textChange() al click
-
-// RIGHT CHANGES
-const rightChange = () => {
-  // cambia el fondo dependiendo el numero de countImage
-  // suma 1 a countImage
-  if (countImage < 5) {
-    countImage += 1;
-  }
-  return countImage, thisImage.style.backgroundImage=`url('./images/showcase-0${countImage}.jpg')`;
-}
-
-const buttonRight = document.querySelector('.showcase__right'); // boton derecho
-buttonRight.addEventListener('click', rightChange); // llama la funcion leftChange() al click
-buttonRight.addEventListener('click', textChange); // llama la funcion textChange() al click

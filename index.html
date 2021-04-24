@@ -48,8 +48,12 @@
       <!-- Showcase -->
       <header class="showcase">
         <div class="showcase__arrows">
-          <div class="showcase__left"><i class="fas fa-chevron-circle-left"></i></div>
-          <div class="showcase__right"><i class="fas fa-chevron-circle-right"></i></div>
+          <div class="showcase__left" onclick="changeImageLeft(), textChange()">
+            <i class="fas fa-chevron-circle-left"></i>
+          </div>
+          <div class="showcase__right" onclick="changeImageRight(), textChange()">
+            <i class="fas fa-chevron-circle-right"></i>
+          </div>
         </div>
         <h2 class="scroll">Level Seven News</h2>
         <p class="showcase__text scroll">Vive el survival horror como nunca antes en la 8.ª entrega principal de la aclamada serie Resident Evil: Resident Evil Village. El terror más realista e inescapable, con gráficos hiperdetallados, intensa acción en 1.ª persona y una trama magistral.</p>
@@ -169,7 +173,6 @@
         </div>
       </section>
 
-
       <!-- Social -->
       <section class="social scroll"> 
         <p>Level Seven</p>
@@ -224,7 +227,7 @@
     <!-- SCRIPTS -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/scrollReveal.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/slide.js"></script>
     <script src="js/scrollProgress.js"></script>
   </body>
 </html>

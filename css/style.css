@@ -316,6 +316,7 @@ ol {
   .showcase {
     border-radius: 0;
     padding: 2em;
+    transition: .45s;
   }
 
   .showcase__arrows {
@@ -412,6 +413,7 @@ ol {
   .showcase {
     border-radius: 0;
     padding: 2em 1em 9em;
+    transition: .3s;
   }
 
   .showcase h2,
