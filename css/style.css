@@ -284,7 +284,7 @@ ol {
 .footer-links {
   box-shadow: 0 -2px 3px var(--gold);
   background: var(--black);
-  font-size: 12px;
+  font-size: 14px;
   padding: 2em 0;
 }
 
@@ -307,8 +307,8 @@ ol {
   background-color: var(--black);
   color: var(--gold);
   text-align: center;
-  padding: 1.1em 0;
-  font-size: 14px;
+  padding: 0 0 .8em;
+  font-size: 1.4em;
 }
 
 /* RESPONSIVE */
@@ -450,8 +450,21 @@ ol {
     padding: .5em .7em 0;
   }
 
+  .footer-links {
+    padding: .5em;
+  }
+
   .footer-links__container {
     grid-template-columns: 1fr;
+    padding: 1em 0;
+  }
+
+  .footer-links__container ul:first-child {
+    margin-bottom: 1em;
+  }
+
+  .footer {
+    padding: 0 0 .5em;
   }
 }
 
@@ -469,7 +482,7 @@ ol {
   }
 
   .footer {
-    padding: 1.4em 0; 
+    padding: 1em 0;
   }
 }
 
