@@ -149,7 +149,7 @@ ol {
   background-color: #1b1b1b;
   margin: .8em 0;
   opacity: 1;
-  transition: .25s;
+  transition: .35s;
   z-index: 2;
 }
 
@@ -251,7 +251,7 @@ ol {
 
 /* SOCIAL */
 .social {
-  margin: 2em;
+  margin-bottom: 1.5em;
   color: #fff;
 }
 
@@ -299,6 +299,11 @@ ol {
   text-align: center;
   display: inherit;
   gap: .2em;
+}
+
+.footer-links__container a:hover {
+  transition: .5s;
+  color: var(--gold);
 }
 
 /* FOOTER */
