@@ -278,6 +278,15 @@ ol {
 .social__links i {
   font-size: 3em;
   color: var(--gold);
+  opacity: .8;
+  transition: .35s;
+  filter: drop-shadow(0 0 2px var(--black));
+}
+
+.social__links i:hover {
+  opacity: 1;
+  color: var(--black);
+  filter: drop-shadow(0 0 2px var(--gold));
 }
 
 /* FOOTER LINKS */
