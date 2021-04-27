@@ -1,7 +1,4 @@
 // ====== Scroll Reveal ======
-document.querySelector('.menu-responsive').addEventListener('click', () => {
-  document.querySelector('.nav-main__menu').classList.toggle('show');
-});
 ScrollReveal().reveal('.scroll');
 ScrollReveal().reveal('.showcase');
 ScrollReveal().reveal('.news-cars', { delay: 300 });
