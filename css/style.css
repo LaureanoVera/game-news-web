@@ -366,18 +366,24 @@ ol {
     z-index: 5;
     transition: left .3s ease-in-out;
   }
-
+  
   .nav-main__menu.show {
     left: 0;
   }
-
+  
+  .nav-main__menu.show li {
+    transform: scale(1);
+  }
+  
   .nav-main {
     justify-content: flex-end;
   }
-
+  
   .nav-main__menu li {
+    transition: transform .35s .3s;
     font-size: 14px;
     padding: 1.4em;
+    transform: scale(0);
   }
 
   .nav-main__menu a {
