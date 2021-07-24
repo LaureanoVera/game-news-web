@@ -28,3 +28,42 @@
     margin-right: 1em;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nav-main {
+    justify-content: flex-end;
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      background-color: @dark-color;
+      height: 100vh;
+      padding: @main-size*2.5;
+      opacity: .85;
+      z-index: 5;
+      transition: left @transition ease-in-out;
+      & li {
+        transition: transform @transition @transition;
+        font-size: @main-size - 2px;
+        padding: @main-size*1.4;
+        transform: scale(0);
+      }
+      & a {
+        padding: (@main-size*.6) @main-size;
+        &:hover {
+          .linear-gradient(90deg, @main-color);
+          border-radius: 4px 0 0 4px;
+        }
+      }
+      &.show {
+        left: 0;
+        & li {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
