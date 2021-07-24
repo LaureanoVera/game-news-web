@@ -1,0 +1,38 @@
+.news-cars {
+  display: grid;
+  .grid-colums(4);
+  gap: @main-size;
+  margin: (@main-size*.7) 0;
+  text-align: center;
+
+  &.med {
+    .grid-colums(3);
+  }
+
+  &.med img {
+    border-radius: 1.8em .3em;
+  }
+}
+
+// cars != cards --> epic fail 😥 
+.news-cards__image {
+  width: 100%;
+  filter: opacity(.85) grayscale(.4);
+  border-radius: (@main-size * .3) @main-size;
+  transition: @transition;
+
+  &:hover {
+    filter: opacity(1) grayscale(0);
+  }
+}
+
+.news-cards__button {
+  font-size: @light-color;
+  padding: (@main-color/5) 0;
+  color: #f5f5f2;
+  text-transform: uppercase;
+
+  &:hover {
+    color: @main-color;
+  }
+}

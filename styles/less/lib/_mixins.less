@@ -6,6 +6,10 @@
   text-shadow: @x @y (@y/2) @dark-color;
 }
 
+.grid-colums(@cant) {
+  grid-template-columns: repeat(@cant, 1fr);
+}
+
 .container {
   max-width: 1024px;
   margin: 0 auto;

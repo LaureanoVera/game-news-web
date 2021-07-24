@@ -1,0 +1,18 @@
+.button {
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: @main-size / 4;
+  padding: (@main-size*.15) (@main-size*.35);
+  background-color: @dark-color;
+  margin: (@main-size*.8) 0;
+  opacity: 1;
+  transition: @transition;
+  z-index: 5;
+
+  &:hover {
+    color: @main-color;
+    filter: opacity(.95);
+    opacity: .95;
+  }
+}
