@@ -45,3 +45,30 @@
     }
   }
 }
+
+// RESPONSIVE
+@media screen and (max-width: 768px) {
+  .showcase {
+    border-radius: 0;
+    padding: @main-size*2;
+    transition: @transition;
+    &__arrows {
+      top: 27vh;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .showcase {
+    border-radius: 0;
+    padding: (@main-size*2) @main-size (@main-size*9);
+    transition: @transition;
+    & h2,
+    & p {
+      padding-bottom: @main-size/10;
+    }
+    &__arrows {
+      top: 70vh;
+    }
+  }
+}
