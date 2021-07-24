@@ -1,0 +1,19 @@
+.menu-responsive {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-responsive {
+    background-color: @dark-color;
+    color: @main-color;
+    padding: 0 (@main-size*.35) .12em;
+    border-radius: 50%;
+    display: block;
+    position: fixed;
+    cursor: pointer;
+    font-size: @main-size*1.5;
+    top: @main-size/2;
+    left: @main-size/2;
+    z-index: 10;
+  }
+}
