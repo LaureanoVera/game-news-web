@@ -1,11 +1,28 @@
 .nav-main {
-  font-size: @font-size;
+  font-size: @main-size;
   background-color: @low-dark-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: @main-size * 3.5;
+  padding: @main-size 0;
+  border-bottom: @light-color;
   &__menu {
-
+    display: flex;
+    flex: 1;
+    & li {
+      padding: @main-size * .76;
+    }
+    & a {
+      background-color: transparent;
+      padding: 2px 7px;
+      transition: @transition;
+      border-bottom: 1px solid transparent;
+      .border-radius(@main-size / 4);
+      &:hover {
+        .linear-gradient(0deg, @main-color)
+      }
+    }
   }
   &__right {
 
