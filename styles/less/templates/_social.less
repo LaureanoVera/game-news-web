@@ -1,0 +1,38 @@
+.social {
+  margin: @main-color * 1.5;
+  color: @light-color;
+
+  & p {
+    text-transform: uppercase;
+    font-weight: @bold;
+    letter-spacing: 3px;
+    filter: drop-shadow(2px 2px 1px gray);
+    text-align: center;
+    font-size: @main-size * 2;
+    margin-bottom: @main-size * .4;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & a {
+      margin: 0 (@main-size*2);
+    }
+
+    & i {
+      font-size: @main-size*3;
+      color: @main-color;
+      opacity: .8;
+      transition: @transition;
+      filter: drop-shadow(0 0 2px @dark-color);
+
+      &:hover {
+        opacity: 1;
+        color: @dark-color;
+        filter: drop-shadow(0 0 2px @main-color);
+      }
+    }
+  }
+}
