@@ -31,3 +31,24 @@
 .banner-three {
   background: url(../images/banner-three-bor.jpg) no-repeat center/cover;
 }
+
+@media screen and (max-width: 768px) {
+  .banner-one,
+  .banner-two,
+  .banner-three {
+    border-radius: 0;
+    &__content {
+      width: 80%;
+      padding: (@main-size*2.5) 0 0 (@main-size*1.8);
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .banner-one__content,
+  .banner-two__content,
+  .banner-three__content {
+    width: 100%;
+    padding: (@main-size*.5) (@main-size*.7) 0;
+  }
+}
