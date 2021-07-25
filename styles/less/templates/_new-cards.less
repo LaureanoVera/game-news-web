@@ -36,3 +36,39 @@
     color: @main-color;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .news-cars {
+    margin: @main-size (@main-size*2);
+    .grid-colums(2);
+    &.med {
+      .grid-colums(2);
+      grid-template-rows: 1fr;
+      grid-auto-flow: row;
+      & div:last-child {
+        margin: 0 (@main-size*1.5);
+        grid-column: 1 / -1;
+        & img {
+          height: 260px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .news-cars {
+    .grid-colums(1);
+    width: 80%;
+    margin: @main-size auto;
+    &.med {
+      .grid-colums(1);
+      & div:last-child {
+        margin: @main-size auto;
+        & img {
+          height: auto;
+        }
+      }
+    }
+  }
+}
