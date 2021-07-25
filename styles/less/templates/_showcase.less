@@ -6,12 +6,13 @@
   text-align: center;
   padding: (@main-size * 4.2) (@main-size * 2.4);
   color: @light-color;
+  filter: grayscale(.5);
   font-weight: @bold;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
-
+  .text-shadow(1px, 1px, @dark-color);
   & h2 {
     font-size: @main-size * 2.2;
     letter-spacing: 2px;
