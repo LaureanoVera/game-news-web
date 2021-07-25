@@ -28,3 +28,29 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 0 0 (@main-size/2);
+    &-links {
+      padding: @main-size/2;
+      &__container {
+        grid-template-columns: 1fr;
+        padding: @main-size 0;
+        & ul:first-child {
+          margin-bottom: @main-size;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .footer {
+    padding: @main-size 0;
+    &-links {
+      margin-bottom: -6px;
+    }
+  }
+}
+
