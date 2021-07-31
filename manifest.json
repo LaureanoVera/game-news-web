@@ -1,0 +1,64 @@
+{
+  "name":"#Game News Web",
+  "short_name":"#Game News",
+  "description": "Vive el gaming a tu medida...",
+  "background_color": "#0b0b0b",
+  "theme_color": "#ddc82d",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "scope": "./",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}
